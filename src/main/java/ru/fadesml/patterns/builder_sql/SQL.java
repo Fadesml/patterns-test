@@ -13,6 +13,7 @@ public class SQL {
     public static Builder builder() {
         return new SQL().new Builder();
     }
+    //TODO SQUASHING
     public class Builder {
         private Builder() {
             //private constructor
