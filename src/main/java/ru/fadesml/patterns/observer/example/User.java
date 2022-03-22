@@ -3,7 +3,6 @@ package ru.fadesml.patterns.observer.example;
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;
 import lombok.Setter;
-import ru.fadesml.patterns.observer.Event;
 import ru.fadesml.patterns.observer.Subscriber;
 
 import java.util.ArrayList;
@@ -12,7 +11,7 @@ import java.util.List;
 @Getter
 @Setter
 @RequiredArgsConstructor
-public class User implements Subscriber<Post, PostEvent> {
+public class User implements Subscriber<PostEvent> {
     private final String name;
     private List<Post> acceptedPosts = new ArrayList<>();
 
